@@ -4,8 +4,8 @@ thinkphp5.1可用的极验扩展
 ## 安装
 > composer require huelse/geetest
 
-##使用
-###参数配置
+## 使用
+### 参数配置
 在配置文件config里配置geetest配置，需要到官网申请
 
 ~~~
@@ -17,7 +17,7 @@ thinkphp5.1可用的极验扩展
     ],
 ~~~
 
-###模板里的调用
+### 模板里的调用
 
 ~~~
 
@@ -118,4 +118,4 @@ if(!is_null($data) && !geetest_check($data)){
 
 ### 更多
 
-如有问题，请及时issue或者发送邮件huelse@oini.top
+如有问题,请及时[issue](https://github.com/Huelse/geetest/issues)或者发送邮件huelse@oini.top
