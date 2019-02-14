@@ -1,6 +1,9 @@
 ## 极验Geetest
 ThinkPHP5.1可用的极验扩展
 
+## 样例
+[极验demo](https://www.geetest.com/demo/)
+
 ## 安装
 > composer require huelse/geetest
 
