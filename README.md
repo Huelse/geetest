@@ -1,5 +1,5 @@
-## 极验geetest
-thinkphp5.1可用的极验扩展
+## 极验Geetest
+ThinkPHP5.1可用的极验扩展
 
 ## 安装
 > composer require huelse/geetest
@@ -62,7 +62,7 @@ $(document).ready(function () {
             } else {
                 $.ajax({
                     type: 'POST',
-                    url: '/login/index/login', //你的控制器设置
+                    url: '/login/index/login', // 自定义
                     dataType: 'json',
                     data: {
                         userId: $('#inputUserid').val(),
@@ -72,7 +72,7 @@ $(document).ready(function () {
                         geetest_seccode: result.geetest_seccode
                     },
                     success: function (data) {
-                        if (data) { // 这里我
+                        if (data) {  // 自定义
                             alert('登陆成功');
                         }
                     },
@@ -86,7 +86,7 @@ $(document).ready(function () {
         window.gt = captchaObj;
     };
     $.ajax({
-        url: "geetest.html?t=" + (new Date()).getTime(), // 加随机数防止缓存 // "{:geetest_url()}?t="
+        url: "{:geetest_url()}?t=" + (new Date()).getTime(), // 加随机数防止缓存 // "geetest.html?t=" // 按需更换
         type: "get",
         dataType: "json",
         success: function (data) {
@@ -112,7 +112,7 @@ $(document).ready(function () {
 $data = Request::param(false); //传入请求数据,使用false参数以获取原始数据
 if(!is_null($data) && !geetest_check($data)){
     //验证失败
-    return json()->data(false)->code(403); //这只是个例子,自定义
+    return json()->data(false)->code(403); // 自定义
 }
 ~~~
 
