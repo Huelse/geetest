@@ -16,5 +16,8 @@
             "email": "huelse@oini.top"
         }
     ],
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "require": {
+        "topthink/framework": "5.1.*"
+    }
 }
