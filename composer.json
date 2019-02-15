@@ -18,6 +18,5 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "topthink/framework": "5.1.*"
     }
 }
