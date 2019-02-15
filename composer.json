@@ -16,9 +16,5 @@
             "email": "huelse@oini.top"
         }
     ],
-    "minimum-stability": "beta",
-    "require": {
-    	"php": "^7.2",
-        "ThinkPHP": "5.1.x"
-    }
+    "minimum-stability": "beta"
 }
