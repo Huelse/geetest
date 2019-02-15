@@ -16,5 +16,5 @@
             "email": "huelse@oini.top"
         }
     ],
-    "minimum-stability": "beta"
+    "minimum-stability": "stable"
 }
