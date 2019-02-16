@@ -1,10 +1,9 @@
 ## 极验Geetest
 ThinkPHP5.1可用的极验扩展
 
-<a href="http://uioi.cn/archives/50" alt="新手教程" target="_blank">案例教程</a>
+[案例教程](http://uioi.cn/archives/50)
 
 ## 样例
-[极验demo](https://www.geetest.com/demo/)
 
 [滑动demo](http://pan.oini.cf/geetest-demo.html)
 
