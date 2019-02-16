@@ -1,8 +1,10 @@
 ## 极验Geetest
 ThinkPHP5.1可用的极验扩展
+<a href="http://uioi.cn/archives/50">教程</a>
 
 ## 样例
 [极验demo](https://www.geetest.com/demo/)
+[滑动demo](http://pan.oini.cf/geetest-demo.html)
 
 ## 安装
 > composer require huelse/geetest
@@ -65,7 +67,7 @@ $(document).ready(function () {
             } else {
                 $.ajax({
                     type: 'POST',
-                    url: '/login/index/login', // 自定义
+                    url: '/', // 自定义接收url
                     dataType: 'json',
                     data: {
                         userId: $('#inputUserid').val(),
@@ -75,13 +77,15 @@ $(document).ready(function () {
                         geetest_seccode: result.geetest_seccode
                     },
                     success: function (data) {
-                        if (data) {  // 自定义
+                        if (data) {  // 传回数据自定义
                             alert('登陆成功');
+                            // 成功后的自定义操作
                         }
                     },
                     error: function (data) {
-                        console.log(JSON.stringify(data));
                         alert('登陆失败');
+                        // console.log(JSON.stringify(data));
+                        // 失败后的自定义操作
                     },
                 });
             }
@@ -89,7 +93,7 @@ $(document).ready(function () {
         window.gt = captchaObj;
     };
     $.ajax({
-        url: "{:geetest_url()}?t=" + (new Date()).getTime(), // 加随机数防止缓存 // "geetest.html?t=" // 按需更换
+        url: "{:geetest_url()}?t=" + (new Date()).getTime(), // 加随机数防止缓存 // 引号内可替换为"geetest.html?t="
         type: "get",
         dataType: "json",
         success: function (data) {
