@@ -78,7 +78,7 @@ $(document).ready(function () {
                         geetest_seccode: result.geetest_seccode
                     },
                     success: function (data) {
-                        if (data) {  // 传回数据自定义
+                        if (data) {
                             alert('登陆成功');
                             // 成功后的自定义操作
                         }
@@ -94,7 +94,7 @@ $(document).ready(function () {
         window.gt = captchaObj;
     };
     $.ajax({
-        url: "{:geetest_url()}?t=" + (new Date()).getTime(), // 加随机数防止缓存 // 引号内可替换为"geetest.html?t="
+        url: "geetest.html?t=" + (new Date()).getTime(), // 加随机数防止缓存
         type: "get",
         dataType: "json",
         success: function (data) {
@@ -105,7 +105,7 @@ $(document).ready(function () {
                 gt: data.gt,
                 challenge: data.challenge,
                 new_captcha: data.new_captcha,
-                product: "float", // 产品形式，包括：float，embed，popup。注意只对PC版验证码有效
+                product: "float", // 产品形式，包括：float，embed，popup 等。注意只对PC版验证码有效
                 offline: !data.success, // 表示用户后台检测极验服务器是否宕机，一般不需要关注
             }, handler);
         }
@@ -118,9 +118,9 @@ $(document).ready(function () {
 
 ~~~
 $data = Request::param(false); //传入请求数据,使用false参数以获取原始数据
-if(!is_null($data) && !geetest_check($data)){
+if(!geetest_check($data)){
     //验证失败
-    return json()->data(false)->code(403); // 自定义
+    return json()->data(false)->code(403);
 }
 ~~~
 

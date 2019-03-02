@@ -1,6 +1,5 @@
 <?php
 
-use think\facade\Url;
 use think\facade\Route;
 use think\facade\Config;
 use think\facade\Session;
@@ -16,16 +15,6 @@ function geetest($config = [])
     Session::set('geetest_userid', $_SERVER['REQUEST_TIME']);
     Session::set('geetest_status', $geetest->pre_process(Session::get('geetest_userid')));
     return $geetest->get_response_str();
-}
-
-/**
- * 获取地址
- * @explain 用于渲染页 也可直接在ajax的url中改为geetest.html?t=获取
- * @return string
- */
-function geetest_url()
-{
-    return Url::build('/geetest');
 }
 
 /**
