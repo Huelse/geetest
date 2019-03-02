@@ -31,9 +31,9 @@ CSS样式参照demo.html的style样式48-144行
 
 <!-- 设定DIV -->
 <form method="post">
-  <input type="text" id="inputUserid" class="form-control" placeholder="账号" required>
-  <input type="password" id="inputPassword" class="form-control" placeholder="密码" required>
-  <div id="captcha" style="height: 42px;">
+  <input type="text" id="inputUserid" placeholder="账号" required>
+  <input type="password" id="inputPassword" placeholder="密码" required>
+  <div id="captcha">
     <div id="text">
       行为验证™ 安全组件加载中
     </div>
@@ -46,7 +46,7 @@ CSS样式参照demo.html的style样式48-144行
       </div>
     </div>
   </div>
-  <input class="btn btn-lg btn-primary btn-block" id="submit" type="button" value="登陆"/>
+  <input id="submit" type="button" value="登陆">
 </form>
 
 <!-- 引入js库 -->
