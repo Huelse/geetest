@@ -1,7 +1,7 @@
 ## 极验Geetest
 ThinkPHP5.1可用的极验扩展
 
-[案例教程](http://uioi.cn/archives/50)
+[案例教程](http://uioi.cn/archives/81)
 
 ## 样例
 
