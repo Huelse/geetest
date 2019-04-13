@@ -1,11 +1,12 @@
 ## 极验Geetest
 ThinkPHP5.1可用的极验扩展
 
-[案例教程](http://uioi.cn/archives/81)
+[案例教程](https://uioi.cn/archives/51)
 
 ## 样例
 
-[滑动demo](http://pan.oini.cf/geetest-demo.html)
+[滑动demo](https://pan.oini.cf/geetest-demo.html)
+[更多案例](https://pan.oini.cf/geetest-demo.html)
 
 ## 安装
 > composer require huelse/geetest
@@ -117,7 +118,7 @@ $(document).ready(function () {
 ### 控制器里验证
 
 ~~~
-$data = Request::param(false); //传入请求数据,使用false参数以获取原始数据
+$data = Request::param(); //传入请求数据
 if(!geetest_check($data)){
     //验证失败
     return json()->data(false)->code(403);
