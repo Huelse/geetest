@@ -7,7 +7,7 @@ ThinkPHP5.1可用的极验扩展
 
 [滑动demo](https://pan.oini.cf/geetest-demo.html)
 
-[更多案例](https://pan.oini.cf/geetest-demo.html)
+[更多案例](https://www.geetest.com/demo/)
 
 ## 安装
 > composer require huelse/geetest
