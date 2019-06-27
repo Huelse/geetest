@@ -25,6 +25,14 @@ ThinkPHP5.1可用的极验扩展
     ],
 ~~~
 
+### 注册路由
+
+请在注册路由的地方注册以下路由：
+
+```php
+Route::rule('geetest/[:id]', "\\think\\geetest\\GeetestController@index");
+```
+
 ### 模板里的调用
 
 ~~~
