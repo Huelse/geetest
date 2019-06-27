@@ -5,9 +5,6 @@ use think\facade\Config;
 use think\facade\Session;
 use think\geetest\GeetestLib;
 
-// 注册路由
-Route::rule('geetest/[:id]', "\\think\\geetest\\GeetestController@index");
-
 function geetest($config = [])
 {
     $config = empty($config) ? Config::get('config.geetest') : $config;
